@@ -8,16 +8,18 @@ import {
   PostgresQueryCompiler,
 } from 'https://esm.sh/kysely@0.23.4'
 
-//TODO: translate these node imports and their usages to Deno
-import bodyParser from "body-parser";
-import cors from "cors";
-import * as Cause from "effect/Cause";
-import * as Effect from "effect/Effect";
-import * as Either from "effect/Either";
-import * as Exit from "effect/Exit";
-import { flow } from "effect/Function";
-import * as Match from "effect/Match";
-import path from "path";
+//TODO: verify that these are imported correctly
+import {
+  Cause,
+  Effect,
+  Either,
+  Exit,
+  Function,
+  Match
+} from 'https://esm.sh/effect@2.3.5
+
+//TODO: verify
+const flow = Function.utils.flow;
 
 import { PostgresDriver } from './DenoPostgresDriver.ts'
 import { Server, ServerLive } from "../Server.ts";
