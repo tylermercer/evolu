@@ -22,8 +22,8 @@ import {
 const flow = Function.utils.flow;
 
 import { PostgresDriver } from './DenoPostgresDriver.ts'
-import { Server, ServerLive } from "../Server.ts";
-import { Database, Db } from "../Types.ts";
+import { Server, ServerLive } from "../../Server.ts";
+import { Database, Db } from "../../Types.ts";
 
 console.log(`Function "kysely-postgres" up and running!`)
 
